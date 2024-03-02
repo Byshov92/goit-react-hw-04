@@ -1,0 +1,6 @@
+.imageList {
+  display: grid;
+  grid-gap: 15px;
+  max-width: calc(100vw - 64px);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}

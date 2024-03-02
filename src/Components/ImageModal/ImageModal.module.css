@@ -1,0 +1,49 @@
+.imageModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 999;
+}
+
+.imageModal {
+    position: absolute;
+  background-color: #C0C0C0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+
+}
+.imageWrrap{
+    width: auto;
+}
+.image {
+  width: auto;
+  max-height: 70vh;
+}
+
+.imageInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.description{
+    width: 400px;
+}
+
+.closeBtn {
+  background-color: #404040;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
