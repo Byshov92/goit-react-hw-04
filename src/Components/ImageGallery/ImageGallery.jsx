@@ -5,11 +5,7 @@ const ImageGallery = ({ images, onImageClick }) => {
   return (
     <ul className={css.imageList}>
       {images.map((image) => (
-        <ImageCard
-          key={image.id}
-          image={image}
-          onClick={() => onImageClick(image)}
-        />
+        <ImageCard key={image.id} image={image} onClick={onImageClick} />
       ))}
     </ul>
   );

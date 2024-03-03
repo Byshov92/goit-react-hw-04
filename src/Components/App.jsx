@@ -53,7 +53,7 @@ const App = () => {
         return;
       }
       setImages((prevImages) => [...prevImages, ...data.results]);
-      setHasMore(page < Math.ceil(data.total_pages / 15));
+      setHasMore(page < data.total_pages);
       setLoading(false);
     });
 
