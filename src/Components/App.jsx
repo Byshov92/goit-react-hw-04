@@ -42,6 +42,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    if (!query) return;
     // setImages([]);
     // setPage(1);
     setLoading(true);
